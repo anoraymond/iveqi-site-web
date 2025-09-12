@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Phone, Mail, FileText, User, MessageCircle } from 'lucide-react'
+import { ArrowRight, Phone, Mail } from 'lucide-react'
 
 interface CTAProps {
-  variant?: 'primary' | 'secondary' | 'modern-primary' | 'modern-secondary'
+  variant?: 'primary' | 'secondary'
   size?: 'sm' | 'md' | 'lg'
   href?: string
   children: React.ReactNode
-  icon?: 'arrow' | 'phone' | 'mail' | 'file' | 'user' | 'message'
+  icon?: 'arrow' | 'phone' | 'mail'
   className?: string
   onClick?: () => void
 }
@@ -21,19 +21,17 @@ export function CTA({
   className = '',
   onClick 
 }: CTAProps) {
-  const baseClasses = "inline-flex items-center justify-center gap-3 font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 transform hover:scale-105 active:scale-95"
+  const baseClasses = "inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
   
   const variants = {
-    primary: "bg-brand-yellow text-brand-ink hover:bg-brand-yellow/90 focus:ring-brand-yellow shadow-lg hover:shadow-xl",
-    secondary: "bg-brand-red text-white hover:bg-brand-deep focus:ring-brand-red shadow-lg hover:shadow-xl",
-    'modern-primary': "bg-gradient-to-r from-brand-yellow to-[#E09A18] text-brand-ink hover:from-[#E09A18] hover:to-brand-yellow focus:ring-brand-yellow shadow-lg hover:shadow-2xl rounded-full border-2 border-brand-yellow/20",
-    'modern-secondary': "bg-gradient-to-r from-brand-red to-[#B71C1C] text-white hover:from-[#B71C1C] hover:to-brand-red focus:ring-brand-red shadow-lg hover:shadow-2xl rounded-full border-2 border-brand-red/20"
+    primary: "bg-brand-yellow text-brand-ink hover:bg-brand-yellow/90 focus:ring-brand-yellow",
+    secondary: "bg-brand-red text-white hover:bg-brand-deep focus:ring-brand-red"
   }
   
   const sizes = {
-    sm: "px-6 py-3 text-sm rounded-full",
-    md: "px-8 py-4 text-base rounded-full", 
-    lg: "px-10 py-5 text-lg rounded-full"
+    sm: "px-4 py-2 text-sm rounded-md",
+    md: "px-6 py-3 text-base rounded-lg",
+    lg: "px-8 py-4 text-lg rounded-xl"
   }
   
   const iconSizes = {
@@ -48,12 +46,6 @@ export function CTA({
         return <Phone className={iconSizes[size]} />
       case 'mail':
         return <Mail className={iconSizes[size]} />
-      case 'file':
-        return <FileText className={iconSizes[size]} />
-      case 'user':
-        return <User className={iconSizes[size]} />
-      case 'message':
-        return <MessageCircle className={iconSizes[size]} />
       default:
         return <ArrowRight className={iconSizes[size]} />
     }
@@ -65,8 +57,8 @@ export function CTA({
     return (
       <Button asChild className={classes}>
         <Link href={href}>
-          {getIcon()}
           {children}
+          {getIcon()}
         </Link>
       </Button>
     )
@@ -77,8 +69,8 @@ export function CTA({
       onClick={onClick}
       className={classes}
     >
-      {getIcon()}
       {children}
+      {getIcon()}
     </Button>
   )
 }
@@ -116,50 +108,22 @@ export function CTASection({
           <h2 className={`text-3xl md:text-4xl font-bold mb-6 ${isInverted ? 'text-white' : 'text-brand-ink'}`}>
             {title}
           </h2>
+          <p className={`text-lg mb-8 ${isInverted ? 'text-gray-300' : 'text-gray-600'}`}>
+            {description}
+          </p>
           
-          {/* Description améliorée avec icônes */}
-          <div className="flex flex-col items-center gap-6 mb-12">
-            <div className="flex items-center gap-4 text-lg">
-              <div className={`p-3 rounded-full ${isInverted ? 'bg-brand-yellow/20' : 'bg-brand-yellow/10'}`}>
-                <FileText className={`h-6 w-6 ${isInverted ? 'text-brand-yellow' : 'text-brand-red'}`} />
-              </div>
-              <span className={`font-medium ${isInverted ? 'text-gray-200' : 'text-gray-700'}`}>
-                Devis personnalisé et gratuit
-              </span>
-            </div>
-            
-            <div className="flex items-center gap-4 text-lg">
-              <div className={`p-3 rounded-full ${isInverted ? 'bg-brand-yellow/20' : 'bg-brand-yellow/10'}`}>
-                <User className={`h-6 w-6 ${isInverted ? 'text-brand-yellow' : 'text-brand-red'}`} />
-              </div>
-              <span className={`font-medium ${isInverted ? 'text-gray-200' : 'text-gray-700'}`}>
-                Équipe d'experts à votre disposition
-              </span>
-            </div>
-            
-            <div className="flex items-center gap-4 text-lg">
-              <div className={`p-3 rounded-full ${isInverted ? 'bg-brand-yellow/20' : 'bg-brand-yellow/10'}`}>
-                <MessageCircle className={`h-6 w-6 ${isInverted ? 'text-brand-yellow' : 'text-brand-red'}`} />
-              </div>
-              <span className={`font-medium ${isInverted ? 'text-gray-200' : 'text-gray-700'}`}>
-                Contactez-nous dès aujourd'hui
-              </span>
-            </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <CTA 
-              variant="modern-primary" 
+              variant="primary" 
               size="lg" 
               href={primaryCTA.href}
-              icon="file"
             >
               {primaryCTA.text}
             </CTA>
             
             {secondaryCTA && (
               <CTA 
-                variant="modern-secondary" 
+                variant="secondary" 
                 size="lg" 
                 href={secondaryCTA.href}
                 icon="phone"

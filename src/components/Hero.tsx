@@ -37,20 +37,21 @@ export function Hero() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <CTA 
-              variant="modern-primary" 
+              variant="primary" 
               size="lg" 
               href="/contact"
-              icon="file"
+              className="text-lg px-8 py-4"
             >
               Demander un devis
             </CTA>
             <CTA 
-              variant="modern-secondary" 
+              variant="secondary" 
               size="lg" 
               href={`tel:${siteConfig.phone}`}
               icon="phone"
+              className="text-lg px-8 py-4"
             >
               Nous appeler
             </CTA>
