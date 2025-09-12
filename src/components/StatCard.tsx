@@ -1,5 +1,5 @@
 import { Statistic } from '@/lib/types'
-import { LucideIcon } from 'lucide-react'
+import { LucideIcon, Calendar, Award, Layers, CheckCircle } from 'lucide-react'
 
 interface StatCardProps {
   statistic: Statistic
@@ -11,13 +11,13 @@ export function StatCard({ statistic, className = '' }: StatCardProps) {
   const IconComponent = ({ name }: { name: string }) => {
     // Mapping des noms d'icônes vers les composants Lucide
     const iconMap: Record<string, LucideIcon> = {
-      Calendar: require('lucide-react').Calendar,
-      Award: require('lucide-react').Award,
-      Layers: require('lucide-react').Layers,
-      CheckCircle: require('lucide-react').CheckCircle,
+      Calendar,
+      Award,
+      Layers,
+      CheckCircle,
     }
     
-    const Icon = iconMap[name] || require('lucide-react').BarChart3
+    const Icon = iconMap[name] || CheckCircle
     return <Icon className="h-8 w-8" />
   }
 

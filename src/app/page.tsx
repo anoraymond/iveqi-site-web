@@ -1,4 +1,3 @@
-import { Footer } from '@/components/Footer'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { HeroCarousel } from '@/components/HeroCarousel'
 import { Hero } from '@/components/Hero'
