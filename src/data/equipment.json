@@ -1,0 +1,146 @@
+[
+  {
+    "id": "bulldozer-cat-d6",
+    "name": "Bulldozer CAT D6",
+    "category": "engin",
+    "brand": "Caterpillar",
+    "model": "D6T",
+    "year": 2020,
+    "specs": {
+      "power": "200 CV",
+      "weight": "18.5 tonnes",
+      "capacity": "4.2 m³",
+      "fuel": "Diesel"
+    },
+    "image": "/images/equipment/bulldozer-cat-d6.jpg",
+    "sectors": ["agricole", "minier", "public"],
+    "available": true,
+    "description": "Bulldozer puissant et fiable pour tous types de travaux de terrassement et de déblaiement."
+  },
+  {
+    "id": "pelleteuse-jcb-220",
+    "name": "Pelleteuse JCB 220",
+    "category": "engin",
+    "brand": "JCB",
+    "model": "220X",
+    "year": 2021,
+    "specs": {
+      "power": "150 CV",
+      "weight": "22 tonnes",
+      "capacity": "1.2 m³",
+      "fuel": "Diesel"
+    },
+    "image": "/images/equipment/pelleteuse-jcb-220.jpg",
+    "sectors": ["agricole", "minier", "public"],
+    "available": true,
+    "description": "Pelleteuse polyvalente idéale pour les travaux de creusement et de chargement."
+  },
+  {
+    "id": "chargeur-case-621",
+    "name": "Chargeur CASE 621",
+    "category": "engin",
+    "brand": "CASE",
+    "model": "621G",
+    "year": 2019,
+    "specs": {
+      "power": "180 CV",
+      "weight": "16 tonnes",
+      "capacity": "3.5 m³",
+      "fuel": "Diesel"
+    },
+    "image": "/images/equipment/chargeur-case-621.jpg",
+    "sectors": ["agricole", "minier", "public"],
+    "available": true,
+    "description": "Chargeur robuste pour le chargement et le transport de matériaux."
+  },
+  {
+    "id": "tombereau-volvo-a25",
+    "name": "Tombereau Volvo A25",
+    "category": "vehicule",
+    "brand": "Volvo",
+    "model": "A25G",
+    "year": 2022,
+    "specs": {
+      "power": "250 CV",
+      "weight": "25 tonnes",
+      "capacity": "15 m³",
+      "fuel": "Diesel"
+    },
+    "image": "/images/equipment/tombereau-volvo-a25.jpg",
+    "sectors": ["minier", "public"],
+    "available": true,
+    "description": "Tombereau articulé pour le transport de matériaux sur tous terrains."
+  },
+  {
+    "id": "niveleuse-cat-140",
+    "name": "Niveleuse CAT 140",
+    "category": "engin",
+    "brand": "Caterpillar",
+    "model": "140M",
+    "year": 2020,
+    "specs": {
+      "power": "160 CV",
+      "weight": "14 tonnes",
+      "capacity": "3.7 m",
+      "fuel": "Diesel"
+    },
+    "image": "/images/equipment/niveleuse-cat-140.jpg",
+    "sectors": ["public"],
+    "available": true,
+    "description": "Niveleuse pour le nivellement et le finissage des routes et pistes."
+  },
+  {
+    "id": "compacteur-bomag-bw120",
+    "name": "Compacteur Bomag BW120",
+    "category": "engin",
+    "brand": "BOMAG",
+    "model": "BW120AD-5",
+    "year": 2021,
+    "specs": {
+      "power": "120 CV",
+      "weight": "12 tonnes",
+      "capacity": "2.1 m",
+      "fuel": "Diesel"
+    },
+    "image": "/images/equipment/compacteur-bomag-bw120.jpg",
+    "sectors": ["public"],
+    "available": true,
+    "description": "Compacteur tandem pour le compactage des enrobés et des sols."
+  },
+  {
+    "id": "tracteur-john-deere-6110",
+    "name": "Tracteur John Deere 6110",
+    "category": "engin",
+    "brand": "John Deere",
+    "model": "6110R",
+    "year": 2022,
+    "specs": {
+      "power": "110 CV",
+      "weight": "4.5 tonnes",
+      "capacity": "PTO 100 CV",
+      "fuel": "Diesel"
+    },
+    "image": "/images/equipment/tracteur-john-deere-6110.jpg",
+    "sectors": ["agricole"],
+    "available": true,
+    "description": "Tracteur agricole polyvalent pour tous types de travaux agricoles."
+  },
+  {
+    "id": "camion-grue-man-26",
+    "name": "Camion Grue MAN 26T",
+    "category": "vehicule",
+    "brand": "MAN",
+    "model": "TGS 26.400",
+    "year": 2021,
+    "specs": {
+      "power": "400 CV",
+      "weight": "26 tonnes",
+      "capacity": "Grue 25T",
+      "fuel": "Diesel"
+    },
+    "image": "/images/equipment/camion-grue-man-26.jpg",
+    "sectors": ["transport", "public"],
+    "available": true,
+    "description": "Camion grue pour le levage et le transport d'équipements lourds."
+  }
+]

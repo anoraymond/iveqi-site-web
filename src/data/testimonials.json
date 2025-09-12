@@ -1,0 +1,82 @@
+[
+  {
+    "id": "temoignage-ministre-infrastructures",
+    "author": "Dr. Amadou Koné",
+    "position": "Ministre des Infrastructures Économiques",
+    "company": "Ministère des Infrastructures Économiques",
+    "content": "IVEQI a démontré son expertise exceptionnelle sur le projet de la route San Pedro-Tabou. Leur professionnalisme et leur respect des délais ont été exemplaires. Nous recommandons vivement leurs services.",
+    "rating": 5,
+    "sector": "public",
+    "featured": true
+  },
+  {
+    "id": "temoignage-societe-plantation",
+    "author": "Mme Fatou Traoré",
+    "position": "Directrice Générale",
+    "company": "Société de Plantation du Centre",
+    "content": "L'aménagement de notre plantation d'hévéas par IVEQI a dépassé nos attentes. Leur maîtrise des techniques agricoles et leur équipement moderne ont été déterminants pour le succès du projet.",
+    "rating": 5,
+    "sector": "agricole",
+    "featured": true
+  },
+  {
+    "id": "temoignage-societe-miniere",
+    "author": "M. Jean-Baptiste Kouassi",
+    "position": "Directeur des Opérations",
+    "company": "Société Minière de l'Ouest",
+    "content": "IVEQI a su s'adapter aux contraintes spécifiques de notre site minier. Leur expertise en travaux miniers et leur respect des normes de sécurité sont remarquables.",
+    "rating": 5,
+    "sector": "minier",
+    "featured": true
+  },
+  {
+    "id": "temoignage-btp-centre",
+    "author": "M. Ibrahim Diabaté",
+    "position": "Directeur de Projet",
+    "company": "Entreprise de BTP Centre",
+    "content": "Le transport de nos engins par IVEQI s'est déroulé parfaitement. Leur professionnalisme et leur souci du détail nous ont permis de respecter nos délais de chantier.",
+    "rating": 5,
+    "sector": "transport",
+    "featured": true
+  },
+  {
+    "id": "temoignage-ministere-peche",
+    "author": "M. Sékou Touré",
+    "position": "Directeur des Infrastructures",
+    "company": "Ministère de la Pêche",
+    "content": "L'aménagement du port de pêche de Sassandra par IVEQI a transformé l'activité de pêche locale. Leur expertise en travaux maritimes est indéniable.",
+    "rating": 5,
+    "sector": "public",
+    "featured": false
+  },
+  {
+    "id": "temoignage-cooperative-divo",
+    "author": "M. Kouadio N'Guessan",
+    "position": "Président",
+    "company": "Coopérative Agricole de Divo",
+    "content": "Grâce à IVEQI, notre plantation de cacao a pu voir le jour dans les meilleures conditions. Leur accompagnement technique a été précieux pour nos agriculteurs.",
+    "rating": 5,
+    "sector": "agricole",
+    "featured": false
+  },
+  {
+    "id": "temoignage-entreprise-construction",
+    "author": "Mme Aminata Ouattara",
+    "position": "Directrice Commerciale",
+    "company": "Groupe Construction Moderne",
+    "content": "Nous faisons régulièrement appel à IVEQI pour la location d'engins. Leur parc matériel est toujours en excellent état et leur service client est irréprochable.",
+    "rating": 5,
+    "sector": "location",
+    "featured": false
+  },
+  {
+    "id": "temoignage-societe-developpement",
+    "author": "M. Mamadou Sangaré",
+    "position": "Chef de Projet",
+    "company": "Société de Développement Rural",
+    "content": "IVEQI a su s'adapter à nos besoins spécifiques en milieu rural. Leur flexibilité et leur expertise technique ont été des atouts majeurs pour nos projets.",
+    "rating": 5,
+    "sector": "agricole",
+    "featured": false
+  }
+]

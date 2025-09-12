@@ -1,0 +1,142 @@
+[
+  {
+    "id": "route-san-pedro-tabou",
+    "title": "Aménagement Route San Pedro - Tabou",
+    "sector": "public",
+    "client": "Ministère des Infrastructures Économiques",
+    "location": "San Pedro - Tabou, Côte d'Ivoire",
+    "duration": "18 mois",
+    "description": "Aménagement d'une route de 45 km reliant San Pedro à Tabou, incluant terrassement, assainissement et revêtement.",
+    "challenge": "Terrain difficile avec zones marécageuses et dénivelés importants nécessitant des techniques spécialisées.",
+    "solution": "Mise en œuvre d'un plan de drainage efficace et utilisation d'engins adaptés aux conditions difficiles.",
+    "results": [
+      "45 km de route aménagée",
+      "Réduction du temps de trajet de 2h à 45min",
+      "Amélioration de la sécurité routière",
+      "Développement économique de la région"
+    ],
+    "images": [
+      "/images/projects/route-san-pedro-1.jpg",
+      "/images/projects/route-san-pedro-2.jpg",
+      "/images/projects/route-san-pedro-3.jpg"
+    ],
+    "featured": true,
+    "completedAt": "2023-12-15"
+  },
+  {
+    "id": "plantation-hevea-bouake",
+    "title": "Aménagement Plantation Hévéa Bouaké",
+    "sector": "agricole",
+    "client": "Société de Plantation du Centre",
+    "location": "Bouaké, Côte d'Ivoire",
+    "duration": "8 mois",
+    "description": "Préparation et aménagement de 500 hectares pour plantation d'hévéas, incluant drainage et irrigation.",
+    "challenge": "Sol argileux nécessitant un drainage optimal et une préparation minutieuse pour la plantation.",
+    "solution": "Travaux de drainage avec système de canaux et préparation des sols avec engins spécialisés.",
+    "results": [
+      "500 hectares aménagés",
+      "Système de drainage optimal",
+      "Plantation de 125 000 plants d'hévéa",
+      "Création de 200 emplois locaux"
+    ],
+    "images": [
+      "/images/projects/plantation-hevea-1.jpg",
+      "/images/projects/plantation-hevea-2.jpg"
+    ],
+    "featured": true,
+    "completedAt": "2023-08-20"
+  },
+  {
+    "id": "mine-or-iti",
+    "title": "Aménagement Site Minier Iti",
+    "sector": "minier",
+    "client": "Société Minière de l'Ouest",
+    "location": "Iti, Côte d'Ivoire",
+    "duration": "12 mois",
+    "description": "Aménagement complet d'un site minier d'or incluant découverture, terrassement et infrastructures.",
+    "challenge": "Site isolé avec accès difficile et conditions climatiques extrêmes pendant la saison des pluies.",
+    "solution": "Planification des travaux selon les saisons et utilisation d'engins adaptés aux conditions minières.",
+    "results": [
+      "Site de 200 hectares aménagé",
+      "Infrastructures minières complètes",
+      "Piste d'accès de 15 km",
+      "Respect des normes environnementales"
+    ],
+    "images": [
+      "/images/projects/mine-iti-1.jpg",
+      "/images/projects/mine-iti-2.jpg",
+      "/images/projects/mine-iti-3.jpg"
+    ],
+    "featured": true,
+    "completedAt": "2023-10-10"
+  },
+  {
+    "id": "transport-engins-yamoussoukro",
+    "title": "Transport Engins Yamoussoukro",
+    "sector": "transport",
+    "client": "Entreprise de BTP Centre",
+    "location": "Abidjan - Yamoussoukro",
+    "duration": "3 jours",
+    "description": "Transport sécurisé de 8 engins de chantier lourds d'Abidjan vers Yamoussoukro pour un projet de construction.",
+    "challenge": "Transport d'engins de 20 à 30 tonnes sur 240 km avec contraintes de circulation et de sécurité.",
+    "solution": "Planification minutieuse des itinéraires, convoyage sécurisé et coordination avec les autorités.",
+    "results": [
+      "8 engins transportés sans incident",
+      "Livraison dans les délais",
+      "Respect des normes de sécurité",
+      "Satisfaction client totale"
+    ],
+    "images": [
+      "/images/projects/transport-yamoussoukro-1.jpg",
+      "/images/projects/transport-yamoussoukro-2.jpg"
+    ],
+    "featured": false,
+    "completedAt": "2023-11-05"
+  },
+  {
+    "id": "amenagement-port-peche-sassandra",
+    "title": "Aménagement Port de Pêche Sassandra",
+    "sector": "public",
+    "client": "Ministère de la Pêche",
+    "location": "Sassandra, Côte d'Ivoire",
+    "duration": "10 mois",
+    "description": "Aménagement d'un port de pêche moderne incluant quai, zone de débarquement et infrastructures.",
+    "challenge": "Travaux en zone côtière avec contraintes marines et nécessité de maintenir l'activité de pêche.",
+    "solution": "Travaux par phases pour maintenir l'activité et utilisation de techniques maritimes spécialisées.",
+    "results": [
+      "Quai de 200 mètres aménagé",
+      "Zone de débarquement moderne",
+      "Amélioration des conditions de travail",
+      "Augmentation de 40% du volume de pêche"
+    ],
+    "images": [
+      "/images/projects/port-sassandra-1.jpg",
+      "/images/projects/port-sassandra-2.jpg"
+    ],
+    "featured": false,
+    "completedAt": "2023-09-15"
+  },
+  {
+    "id": "plantation-cacao-divo",
+    "title": "Aménagement Plantation Cacao Divo",
+    "sector": "agricole",
+    "client": "Coopérative Agricole de Divo",
+    "location": "Divo, Côte d'Ivoire",
+    "duration": "6 mois",
+    "description": "Préparation et aménagement de 300 hectares pour plantation de cacaoyers avec système d'irrigation.",
+    "challenge": "Optimisation de l'espace et mise en place d'un système d'irrigation efficace pour les cacaoyers.",
+    "solution": "Planification précise des plantations et installation d'un système d'irrigation goutte à goutte.",
+    "results": [
+      "300 hectares aménagés",
+      "Plantation de 90 000 cacaoyers",
+      "Système d'irrigation moderne",
+      "Formation des agriculteurs"
+    ],
+    "images": [
+      "/images/projects/plantation-cacao-1.jpg",
+      "/images/projects/plantation-cacao-2.jpg"
+    ],
+    "featured": false,
+    "completedAt": "2023-07-30"
+  }
+]

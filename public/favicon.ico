@@ -1,0 +1,20 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#212121" rx="4"/>
+  <g transform="translate(4, 8)">
+    <!-- Excavateur simplifié -->
+    <rect x="0" y="0" width="12" height="2" fill="#C62828" rx="1"/>
+    <rect x="10" y="-1" width="8" height="1" fill="#C62828" rx="1"/>
+    <rect x="16" y="-2" width="6" height="1" fill="#C62828" rx="1"/>
+    <rect x="20" y="-3" width="4" height="1" fill="#C62828" rx="1"/>
+    <rect x="22" y="-4" width="3" height="1" fill="#F9A825" rx="1"/>
+    
+    <!-- Cabine -->
+    <rect x="1" y="1" width="6" height="4" fill="#C62828" rx="1"/>
+    <rect x="2" y="2" width="1" height="1" fill="#212121" rx="1"/>
+    <rect x="4" y="2" width="1" height="1" fill="#212121" rx="1"/>
+    
+    <!-- Roues -->
+    <circle cx="2" cy="8" r="1" fill="#212121"/>
+    <circle cx="6" cy="8" r="1" fill="#212121"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F5F5F5"/>
+  <g transform="translate(50, 50)">
+    <!-- Site minier -->
+    <polygon points="0,200 100,50 200,200" fill="#666" opacity="0.7"/>
+    <polygon points="100,200 200,80 300,200" fill="#666" opacity="0.7"/>
+    
+    <!-- Excavateur -->
+    <rect x="150" y="120" width="60" height="30" fill="#C62828" rx="5"/>
+    <rect x="130" y="100" width="25" height="15" fill="#C62828" rx="3"/>
+    <rect x="110" y="80" width="20" height="12" fill="#C62828" rx="2"/>
+    <rect x="90" y="60" width="15" height="10" fill="#C62828" rx="2"/>
+    <rect x="70" y="40" width="12" height="8" fill="#C62828" rx="1"/>
+    <rect x="50" y="20" width="10" height="6" fill="#C62828" rx="1"/>
+    <rect x="30" y="0" width="8" height="4" fill="#F9A825" rx="1"/>
+    
+    <!-- Camion -->
+    <rect x="250" y="150" width="80" height="40" fill="#C62828" rx="5"/>
+    <circle cx="270" cy="210" r="15" fill="#212121"/>
+    <circle cx="310" cy="210" r="15" fill="#212121"/>
+    
+    <!-- Texte -->
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#212121">Site Minier Iti</text>
+    <text x="20" y="250" font-family="Arial, sans-serif" font-size="12" fill="#666">200 hectares • 12 mois • Société Minière de l'Ouest</text>
+  </g>
+</svg>

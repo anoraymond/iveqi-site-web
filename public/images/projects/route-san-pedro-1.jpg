@@ -1,0 +1,22 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F5F5F5"/>
+  <g transform="translate(50, 50)">
+    <!-- Route -->
+    <rect x="0" y="120" width="300" height="40" fill="#666"/>
+    <rect x="0" y="110" width="300" height="10" fill="#F9A825"/>
+    <rect x="0" y="160" width="300" height="10" fill="#F9A825"/>
+    
+    <!-- Paysage -->
+    <polygon points="0,200 50,150 100,200" fill="#4CAF50" opacity="0.6"/>
+    <polygon points="100,200 150,120 200,200" fill="#4CAF50" opacity="0.6"/>
+    <polygon points="200,200 250,140 300,200" fill="#4CAF50" opacity="0.6"/>
+    
+    <!-- Engins -->
+    <rect x="100" y="100" width="40" height="25" fill="#C62828" rx="3"/>
+    <rect x="200" y="100" width="40" height="25" fill="#C62828" rx="3"/>
+    
+    <!-- Texte -->
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#212121">Route San Pedro - Tabou</text>
+    <text x="20" y="250" font-family="Arial, sans-serif" font-size="12" fill="#666">45 km • 18 mois • Ministère des Infrastructures</text>
+  </g>
+</svg>

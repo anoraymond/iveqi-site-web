@@ -1,0 +1,30 @@
+[
+  {
+    "id": "annees-experience",
+    "value": "24+",
+    "label": "Années d'expérience",
+    "icon": "Calendar",
+    "description": "Plus de deux décennies d'expertise dans les travaux de génie civil"
+  },
+  {
+    "id": "certification-iso",
+    "value": "ISO 9001:2015",
+    "label": "Certification qualité",
+    "icon": "Award",
+    "description": "Certifiés Bureau Veritas pour la qualité de nos services"
+  },
+  {
+    "id": "secteurs-activite",
+    "value": "5",
+    "label": "Secteurs d'activité",
+    "icon": "Layers",
+    "description": "Travaux agricoles, miniers, publics, location et transport"
+  },
+  {
+    "id": "projets-realises",
+    "value": "500+",
+    "label": "Projets réalisés",
+    "icon": "CheckCircle",
+    "description": "Plus de 500 projets menés à bien avec succès"
+  }
+]

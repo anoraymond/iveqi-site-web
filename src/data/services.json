@@ -1,0 +1,97 @@
+[
+  {
+    "id": "travaux-agricoles",
+    "slug": "travaux-agricoles",
+    "title": "Travaux Agricoles",
+    "subtitle": "Expertise en travaux agricoles",
+    "description": "Nous réalisons tous types de travaux agricoles avec notre parc d'engins spécialisés. De la préparation des sols à la récolte, nous accompagnons les exploitants agricoles dans leurs projets.",
+    "benefits": [
+      "Préparation des sols et labour",
+      "Semis et plantation",
+      "Entretien des cultures",
+      "Récolte et transport",
+      "Drainage et irrigation",
+      "Défrichage et aménagement"
+    ],
+    "image": "/images/services/travaux-agricoles.jpg",
+    "icon": "Tractor",
+    "sector": "agricole",
+    "featured": true
+  },
+  {
+    "id": "travaux-miniers",
+    "slug": "travaux-miniers", 
+    "title": "Travaux Miniers",
+    "subtitle": "Solutions minières complètes",
+    "description": "Notre expertise en travaux miniers couvre l'extraction, le transport et le traitement des matériaux. Nous intervenons sur tous types de sites miniers avec des engins adaptés aux conditions difficiles.",
+    "benefits": [
+      "Extraction et chargement",
+      "Transport de matériaux",
+      "Décapage et terrassement",
+      "Aménagement de sites",
+      "Maintenance d'infrastructures",
+      "Remise en état"
+    ],
+    "image": "/images/services/travaux-miniers.jpg",
+    "icon": "Mountain",
+    "sector": "minier",
+    "featured": true
+  },
+  {
+    "id": "travaux-publics",
+    "slug": "travaux-publics",
+    "title": "Travaux Publics", 
+    "subtitle": "Infrastructures et aménagements",
+    "description": "Nous participons aux grands projets d'infrastructure en Côte d'Ivoire. Routes, ponts, bâtiments publics, nous mettons notre savoir-faire au service du développement du pays.",
+    "benefits": [
+      "Construction de routes",
+      "Aménagement urbain",
+      "Terrassement et fondations",
+      "Travaux de voirie",
+      "Construction de ponts",
+      "Aménagement paysager"
+    ],
+    "image": "/images/services/travaux-publics.jpg",
+    "icon": "Building",
+    "sector": "public",
+    "featured": true
+  },
+  {
+    "id": "location-engins",
+    "slug": "location-engins",
+    "title": "Location d'Engins",
+    "subtitle": "Location d'engins de chantier",
+    "description": "Nous proposons la location d'engins de chantier pour tous vos projets. Notre parc matériel moderne et bien entretenu est disponible avec ou sans conducteur.",
+    "benefits": [
+      "Parc matériel moderne",
+      "Avec ou sans conducteur",
+      "Maintenance incluse",
+      "Assurance comprise",
+      "Livraison sur site",
+      "Formation des équipes"
+    ],
+    "image": "/images/services/location-engins.jpg",
+    "icon": "Wrench",
+    "sector": "location",
+    "featured": true
+  },
+  {
+    "id": "transport-engins",
+    "slug": "transport-engins",
+    "title": "Transport d'Engins",
+    "subtitle": "Transport sécurisé d'engins lourds",
+    "description": "Nous assurons le transport sécurisé de vos engins lourds sur tout le territoire ivoirien. Notre flotte de véhicules spécialisés garantit la sécurité de vos équipements.",
+    "benefits": [
+      "Transport sécurisé",
+      "Couverture nationale",
+      "Véhicules spécialisés",
+      "Assurance transport",
+      "Suivi en temps réel",
+      "Livraison ponctuelle"
+    ],
+    "image": "/images/services/transport-engins.jpg",
+    "icon": "Truck",
+    "sector": "transport",
+    "featured": true
+  }
+]

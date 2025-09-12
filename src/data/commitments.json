@@ -1,0 +1,44 @@
+[
+  {
+    "id": "qualite-iso",
+    "title": "Qualité ISO 9001:2015",
+    "description": "Notre système de management de la qualité certifié ISO 9001:2015 par Bureau Veritas garantit l'excellence de nos services et la satisfaction de nos clients.",
+    "icon": "Award",
+    "category": "qualite"
+  },
+  {
+    "id": "securite-hse",
+    "title": "Sécurité HSE",
+    "description": "Nous appliquons les plus hauts standards de sécurité, hygiène et environnement sur tous nos chantiers pour protéger nos équipes et l'environnement.",
+    "icon": "Shield",
+    "category": "securite"
+  },
+  {
+    "id": "environnement-durable",
+    "title": "Environnement Durable",
+    "description": "Nous nous engageons pour un développement durable en respectant l'environnement et en minimisant l'impact de nos activités sur les écosystèmes.",
+    "icon": "Leaf",
+    "category": "environnement"
+  },
+  {
+    "id": "innovation-technique",
+    "title": "Innovation Technique",
+    "description": "Nous investissons continuellement dans des équipements modernes et des techniques innovantes pour améliorer nos performances et réduire les délais.",
+    "icon": "Lightbulb",
+    "category": "innovation"
+  },
+  {
+    "id": "formation-equipes",
+    "title": "Formation des Équipes",
+    "description": "Nos équipes bénéficient d'une formation continue pour maîtriser les dernières technologies et respecter les normes de sécurité les plus strictes.",
+    "icon": "GraduationCap",
+    "category": "qualite"
+  },
+  {
+    "id": "satisfaction-client",
+    "title": "Satisfaction Client",
+    "description": "La satisfaction de nos clients est notre priorité. Nous nous engageons à livrer des projets de qualité dans les délais convenus.",
+    "icon": "Heart",
+    "category": "qualite"
+  }
+]

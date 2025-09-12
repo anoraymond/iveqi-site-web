@@ -1,0 +1,76 @@
+/* Animations pour la navigation IVEQI */
+
+.navlink {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navlink::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #F9A825;
+  transition: width 0.25s ease, left 0.25s ease;
+}
+
+.navlink:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.navlink[data-active="true"]::after {
+  left: 0;
+  width: 100%;
+}
+
+/* Animation pour le dropdown */
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.dropdown-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Animation pour le drawer mobile */
+.drawer-enter {
+  transform: translateX(100%);
+}
+
+.drawer-enter-active {
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.drawer-exit {
+  transform: translateX(0);
+}
+
+.drawer-exit-active {
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+/* Focus visible amélioré */
+.focus-visible-ring:focus-visible {
+  outline: none;
+  ring: 2px solid #C62828;
+  ring-offset: 2px;
+}

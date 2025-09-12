@@ -1,0 +1,21 @@
+{
+  "name": "IVEQI - Ivoire Équipements",
+  "short_name": "IVEQI",
+  "description": "Entreprise certifiée ISO 9001:2015 spécialisée dans les travaux agricoles, miniers, publics, location et transport d'engins en Côte d'Ivoire.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#212121",
+  "theme_color": "#F9A825",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
