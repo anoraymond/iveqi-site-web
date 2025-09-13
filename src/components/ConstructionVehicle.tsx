@@ -15,6 +15,8 @@ export function ConstructionVehicle({ className = '' }: ConstructionVehicleProps
       const documentHeight = document.documentElement.scrollHeight - window.innerHeight
       const progress = Math.min(scrollTop / documentHeight, 1)
       setScrollProgress(progress)
+      // Debug temporaire
+      console.log('Scroll progress:', progress, 'TranslateY:', 10 + (progress * 80))
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -22,14 +24,16 @@ export function ConstructionVehicle({ className = '' }: ConstructionVehicleProps
   }, [])
 
   // Position verticale basée sur le scroll (de haut en bas)
-  const translateY = scrollProgress * 100 // Pourcentage de la hauteur
+  // Ajouter un offset pour ne pas commencer tout en haut
+  const translateY = 10 + (scrollProgress * 80) // De 10vh à 90vh
 
   return (
     <div 
-      className={`fixed right-4 w-20 h-12 z-40 transition-transform duration-300 ease-out ${className}`}
+      className={`fixed right-8 w-24 h-14 z-40 transition-transform duration-300 ease-out ${className}`}
       style={{ 
         transform: `translateY(${translateY}vh)`,
-        filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.7))'
+        filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.7))',
+        top: 0
       }}
     >
       <svg 
