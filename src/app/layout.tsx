@@ -33,7 +33,7 @@ export default function RootLayout({
           Aller au contenu principal
         </a>
         <Header />
-            <main id="main-content" className="pt-[74px] min-h-screen">
+            <main id="main-content" className="pt-[75px] min-h-screen">
           {children}
         </main>
         <Footer />

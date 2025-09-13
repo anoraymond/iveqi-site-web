@@ -48,11 +48,6 @@ export function Header() {
       <header 
         className="fixed inset-x-0 top-0 z-50 bg-white text-black shadow-md"
       >
-        {/* Barre jaune avec animation d'engin */}
-        <div className="relative bg-[#F9A825] h-2 w-full overflow-hidden">
-          <ConstructionVehicle className="opacity-90" />
-        </div>
-        
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-[70px]">
             {/* Logo */}
@@ -143,6 +138,11 @@ export function Header() {
               </button>
             </div>
           </div>
+        </div>
+        
+        {/* Barre jaune avec animation d'engin en bas du header */}
+        <div className="relative bg-[#F9A825] h-3 w-full overflow-hidden">
+          <ConstructionVehicle className="opacity-95" />
         </div>
       </header>
 
