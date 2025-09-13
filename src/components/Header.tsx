@@ -141,8 +141,8 @@ export function Header() {
         </div>
         
         {/* Barre jaune avec animation d'engin en bas du header */}
-        <div className="relative bg-[#F9A825] h-3 w-full overflow-hidden">
-          <ConstructionVehicle className="opacity-95" />
+        <div className="relative bg-[#F9A825] h-4 w-full overflow-hidden">
+          <ConstructionVehicle className="opacity-100" />
         </div>
       </header>
 
