@@ -29,32 +29,35 @@ export function ConstructionVehicle({ className = '' }: ConstructionVehicleProps
 
   return (
     <>
-      {/* Route transparente fixe sur toute la hauteur de l'écran */}
+      {/* Route asphaltée fixe sur toute la hauteur de l'écran */}
       <div 
-        className="fixed right-12 top-0 w-1 h-screen z-30"
+        className="fixed right-10 top-0 w-8 h-screen z-30"
         style={{ 
-          background: 'linear-gradient(to bottom, rgba(74,74,74,0.8) 0%, rgba(74,74,74,0.8) 100%)',
-          boxShadow: '0 0 0 1px rgba(255,255,255,0.3) inset'
+          background: 'linear-gradient(to bottom, #4A4A4A 0%, #3A3A3A 50%, #4A4A4A 100%)',
+          boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.2), inset 0 0 0 2px rgba(0,0,0,0.3)'
         }}
       />
       
-      {/* Ligne centrale de la route */}
+      {/* Ligne blanche centrale de la route */}
       <div 
-        className="fixed right-12 top-0 w-px h-screen z-30"
+        className="fixed right-10 top-0 w-8 h-screen z-30"
         style={{ 
-          background: 'rgba(255,255,255,0.6)',
+          background: 'repeating-linear-gradient(to bottom, transparent 0px, transparent 20px, rgba(255,255,255,0.8) 20px, rgba(255,255,255,0.8) 40px)',
           left: '50%',
-          transform: 'translateX(-50%)'
+          transform: 'translateX(-50%)',
+          width: '2px'
         }}
       />
       
-      {/* Compacteur animé */}
+      {/* Compacteur animé - positionné sur la route */}
       <div 
-        className={`fixed right-12 w-28 h-16 z-40 transition-transform duration-300 ease-out ${className}`}
+        className={`fixed right-10 w-28 h-16 z-40 transition-transform duration-300 ease-out ${className}`}
         style={{ 
           transform: `translateY(${translateY}vh)`,
           filter: 'drop-shadow(0 6px 16px rgba(0,0,0,0.8))',
-          top: 0
+          top: 0,
+          left: '50%',
+          marginLeft: '-14px' // Centrer le compacteur sur la route
         }}
       >
       <svg 
@@ -62,61 +65,60 @@ export function ConstructionVehicle({ className = '' }: ConstructionVehicleProps
         className="w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Châssis principal - Compacteur (rouleau compresseur) */}
-        <rect x="15" y="15" width="30" height="12" fill="#FF4444" rx="2" stroke="#212121" strokeWidth="1.5"/>
+        {/* Châssis principal - Vue de dessus du compacteur */}
+        <rect x="12" y="16" width="36" height="16" fill="#FF4444" rx="3" stroke="#212121" strokeWidth="1.5"/>
         
-        {/* Cabine du compacteur */}
-        <rect x="18" y="8" width="24" height="10" fill="#F9A825" rx="1" stroke="#212121" strokeWidth="1.5"/>
+        {/* Cabine du compacteur - vue de dessus */}
+        <rect x="15" y="8" width="30" height="12" fill="#F9A825" rx="2" stroke="#212121" strokeWidth="1.5"/>
         
         {/* Vitres de la cabine */}
-        <rect x="20" y="10" width="20" height="6" fill="#87CEEB" rx="0.5" stroke="#212121" strokeWidth="1"/>
-        <rect x="21" y="11" width="18" height="4" fill="#E6F3FF" rx="0.5"/>
+        <rect x="18" y="11" width="24" height="6" fill="#87CEEB" rx="1" stroke="#212121" strokeWidth="1"/>
+        <rect x="20" y="12" width="20" height="4" fill="#E6F3FF" rx="0.5"/>
         
-        {/* Rouleau avant - compacteur */}
-        <circle cx="25" cy="30" r="8" fill="#666666" stroke="#212121" strokeWidth="2"/>
-        <circle cx="25" cy="30" r="6" fill="#888888"/>
-        <circle cx="25" cy="30" r="4" fill="#AAAAAA"/>
+        {/* Rouleau avant - vue de dessus */}
+        <ellipse cx="25" cy="32" rx="10" ry="6" fill="#666666" stroke="#212121" strokeWidth="2"/>
+        <ellipse cx="25" cy="32" rx="7" ry="4" fill="#888888"/>
+        <ellipse cx="25" cy="32" rx="5" ry="3" fill="#AAAAAA"/>
         
-        {/* Rouleau arrière - compacteur */}
-        <circle cx="35" cy="30" r="8" fill="#666666" stroke="#212121" strokeWidth="2"/>
-        <circle cx="35" cy="30" r="6" fill="#888888"/>
-        <circle cx="35" cy="30" r="4" fill="#AAAAAA"/>
+        {/* Rouleau arrière - vue de dessus */}
+        <ellipse cx="35" cy="32" rx="10" ry="6" fill="#666666" stroke="#212121" strokeWidth="2"/>
+        <ellipse cx="35" cy="32" rx="7" ry="4" fill="#888888"/>
+        <ellipse cx="35" cy="32" rx="5" ry="3" fill="#AAAAAA"/>
         
-        {/* Détails des rouleaux - rainures */}
-        <rect x="21" y="26" width="8" height="1" fill="#555555"/>
-        <rect x="21" y="28" width="8" height="1" fill="#555555"/>
-        <rect x="21" y="30" width="8" height="1" fill="#555555"/>
-        <rect x="21" y="32" width="8" height="1" fill="#555555"/>
-        <rect x="21" y="34" width="8" height="1" fill="#555555"/>
+        {/* Détails des rouleaux - rainures (vue de dessus) */}
+        <rect x="18" y="28" width="14" height="1" fill="#555555"/>
+        <rect x="18" y="30" width="14" height="1" fill="#555555"/>
+        <rect x="18" y="32" width="14" height="1" fill="#555555"/>
+        <rect x="18" y="34" width="14" height="1" fill="#555555"/>
+        <rect x="18" y="36" width="14" height="1" fill="#555555"/>
         
-        <rect x="31" y="26" width="8" height="1" fill="#555555"/>
-        <rect x="31" y="28" width="8" height="1" fill="#555555"/>
-        <rect x="31" y="30" width="8" height="1" fill="#555555"/>
-        <rect x="31" y="32" width="8" height="1" fill="#555555"/>
-        <rect x="31" y="34" width="8" height="1" fill="#555555"/>
+        <rect x="28" y="28" width="14" height="1" fill="#555555"/>
+        <rect x="28" y="30" width="14" height="1" fill="#555555"/>
+        <rect x="28" y="32" width="14" height="1" fill="#555555"/>
+        <rect x="28" y="34" width="14" height="1" fill="#555555"/>
+        <rect x="28" y="36" width="14" height="1" fill="#555555"/>
         
-        {/* Phares avant */}
-        <circle cx="24" cy="12" r="2" fill="#FFFFFF" stroke="#212121" strokeWidth="1"/>
-        <circle cx="36" cy="12" r="2" fill="#FFFFFF" stroke="#212121" strokeWidth="1"/>
-        <circle cx="30" cy="11" r="1.5" fill="#FFD700"/>
+        {/* Phares avant - vue de dessus */}
+        <circle cx="22" cy="12" r="2.5" fill="#FFFFFF" stroke="#212121" strokeWidth="1"/>
+        <circle cx="38" cy="12" r="2.5" fill="#FFFFFF" stroke="#212121" strokeWidth="1"/>
+        <circle cx="30" cy="10" r="2" fill="#FFD700"/>
         
-        {/* Phares arrière */}
-        <circle cx="22" cy="20" r="1.5" fill="#FFFFFF" stroke="#212121" strokeWidth="1"/>
-        <circle cx="38" cy="20" r="1.5" fill="#FFFFFF" stroke="#212121" strokeWidth="1"/>
-        <circle cx="30" cy="19" r="1" fill="#FF4444"/>
+        {/* Phares arrière - vue de dessus */}
+        <circle cx="18" cy="20" r="2" fill="#FFFFFF" stroke="#212121" strokeWidth="1"/>
+        <circle cx="42" cy="20" r="2" fill="#FFFFFF" stroke="#212121" strokeWidth="1"/>
+        <circle cx="30" cy="22" r="1.5" fill="#FF4444"/>
         
-        {/* Échappement */}
-        <rect x="42" y="18" width="2" height="6" fill="#333333"/>
-        <ellipse cx="43" cy="16" rx="1" ry="1.5" fill="#666666"/>
+        {/* Échappement - vue de dessus */}
+        <rect x="45" y="18" width="3" height="8" fill="#333333"/>
+        <ellipse cx="46.5" cy="16" rx="1.5" ry="2" fill="#666666"/>
         
         {/* Détails du châssis */}
-        <rect x="18" y="17" width="6" height="2" fill="#333333"/>
-        <rect x="26" y="17" width="6" height="2" fill="#333333"/>
-        <rect x="34" y="17" width="6" height="2" fill="#333333"/>
+        <rect x="16" y="18" width="8" height="3" fill="#333333"/>
+        <rect x="26" y="18" width="8" height="3" fill="#333333"/>
+        <rect x="36" y="18" width="8" height="3" fill="#333333"/>
         
-        {/* Asphalte compacté derrière le compacteur */}
-        <rect x="28" y="32" width="4" height="8" fill="#2A2A2A" opacity="0.7"/>
-        <rect x="29" y="33" width="2" height="6" fill="#333333" opacity="0.5"/>
+        {/* Ombre sous le compacteur */}
+        <ellipse cx="30" cy="38" rx="20" ry="3" fill="rgba(0,0,0,0.3)" opacity="0.5"/>
       </svg>
       </div>
     </>
