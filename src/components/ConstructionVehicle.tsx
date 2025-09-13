@@ -28,25 +28,40 @@ export function ConstructionVehicle({ className = '' }: ConstructionVehicleProps
   const translateY = 10 + (scrollProgress * 80) // De 10vh à 90vh
 
   return (
-    <div 
-      className={`fixed right-12 w-28 h-16 z-40 transition-transform duration-300 ease-out ${className}`}
-      style={{ 
-        transform: `translateY(${translateY}vh)`,
-        filter: 'drop-shadow(0 6px 16px rgba(0,0,0,0.8))',
-        top: 0
-      }}
-    >
+    <>
+      {/* Route transparente fixe sur toute la hauteur de l'écran */}
+      <div 
+        className="fixed right-12 top-0 w-1 h-screen z-30"
+        style={{ 
+          background: 'linear-gradient(to bottom, rgba(74,74,74,0.8) 0%, rgba(74,74,74,0.8) 100%)',
+          boxShadow: '0 0 0 1px rgba(255,255,255,0.3) inset'
+        }}
+      />
+      
+      {/* Ligne centrale de la route */}
+      <div 
+        className="fixed right-12 top-0 w-px h-screen z-30"
+        style={{ 
+          background: 'rgba(255,255,255,0.6)',
+          left: '50%',
+          transform: 'translateX(-50%)'
+        }}
+      />
+      
+      {/* Compacteur animé */}
+      <div 
+        className={`fixed right-12 w-28 h-16 z-40 transition-transform duration-300 ease-out ${className}`}
+        style={{ 
+          transform: `translateY(${translateY}vh)`,
+          filter: 'drop-shadow(0 6px 16px rgba(0,0,0,0.8))',
+          top: 0
+        }}
+      >
       <svg 
         viewBox="0 0 60 40" 
         className="w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Route verticale que suit le compacteur */}
-        <rect x="28" y="0" width="4" height="40" fill="#4A4A4A" opacity="0.8"/>
-        
-        {/* Marques de route (lignes blanches) */}
-        <rect x="29.5" y="0" width="1" height="40" fill="#FFFFFF" opacity="0.6"/>
-        
         {/* Châssis principal - Compacteur (rouleau compresseur) */}
         <rect x="15" y="15" width="30" height="12" fill="#FF4444" rx="2" stroke="#212121" strokeWidth="1.5"/>
         
@@ -103,6 +118,7 @@ export function ConstructionVehicle({ className = '' }: ConstructionVehicleProps
         <rect x="28" y="32" width="4" height="8" fill="#2A2A2A" opacity="0.7"/>
         <rect x="29" y="33" width="2" height="6" fill="#333333" opacity="0.5"/>
       </svg>
-    </div>
+      </div>
+    </>
   )
 }
