@@ -21,15 +21,15 @@ export function ConstructionVehicle({ className = '' }: ConstructionVehicleProps
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Position horizontale basée sur le scroll (de gauche à droite)
-  const translateX = scrollProgress * 100 // Pourcentage de la largeur
+  // Position verticale basée sur le scroll (de haut en bas)
+  const translateY = scrollProgress * 100 // Pourcentage de la hauteur
 
   return (
     <div 
-      className={`absolute bottom-0 left-0 w-16 h-10 transition-transform duration-300 ease-out ${className}`}
+      className={`fixed right-4 w-20 h-12 z-40 transition-transform duration-300 ease-out ${className}`}
       style={{ 
-        transform: `translateX(${translateX}vw)`,
-        filter: 'drop-shadow(0 3px 8px rgba(0,0,0,0.6))'
+        transform: `translateY(${translateY}vh)`,
+        filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.7))'
       }}
     >
       <svg 

@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation'
 import { Menu, ChevronDown } from 'lucide-react'
 import { navigationItems } from '@/lib/routes'
 import { MobileDrawer } from '@/components/MobileDrawer'
-import { ConstructionVehicle } from '@/components/ConstructionVehicle'
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -47,9 +46,10 @@ export function Header() {
     <>
       <header 
         className="fixed inset-x-0 top-0 z-50 bg-white text-black shadow-md"
+        style={{ borderBottom: '2px solid #F9A825' }}
       >
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-[70px]">
+          <div className="flex items-center justify-between h-[72px]">
             {/* Logo */}
             <Link 
               href="/" 
@@ -138,11 +138,6 @@ export function Header() {
               </button>
             </div>
           </div>
-        </div>
-        
-        {/* Barre jaune avec animation d'engin en bas du header */}
-        <div className="relative bg-[#F9A825] h-4 w-full overflow-hidden">
-          <ConstructionVehicle className="opacity-100" />
         </div>
       </header>
 
