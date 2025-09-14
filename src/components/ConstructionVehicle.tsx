@@ -29,35 +29,40 @@ export function ConstructionVehicle({ className = '' }: ConstructionVehicleProps
 
   return (
     <>
-      {/* Route asphaltée fixe sur toute la hauteur de l'écran */}
+      {/* Route verticale de 10px à 50px du bord droit */}
       <div 
-        className="fixed right-10 top-0 w-8 h-screen z-30"
+        className="fixed top-0 h-screen z-30"
         style={{ 
-          background: 'linear-gradient(to bottom, #4A4A4A 0%, #3A3A3A 50%, #4A4A4A 100%)',
-          boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.2), inset 0 0 0 2px rgba(0,0,0,0.3)'
+          right: '50px',
+          width: '10px',
+          background: 'repeating-linear-gradient(to bottom, #4A4A4A 0px, #4A4A4A 15px, #6A6A6A 15px, #6A6A6A 30px)',
+          boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.3), inset 0 0 0 2px rgba(0,0,0,0.4)'
         }}
       />
       
-      {/* Ligne blanche centrale de la route */}
+      {/* Ligne blanche centrale de la route (marquage routier) */}
       <div 
-        className="fixed right-10 top-0 w-8 h-screen z-30"
+        className="fixed top-0 h-screen z-30"
         style={{ 
-          background: 'repeating-linear-gradient(to bottom, transparent 0px, transparent 20px, rgba(255,255,255,0.8) 20px, rgba(255,255,255,0.8) 40px)',
+          right: '50px',
+          width: '10px',
+          background: 'repeating-linear-gradient(to bottom, transparent 0px, transparent 20px, rgba(255,255,255,0.9) 20px, rgba(255,255,255,0.9) 40px)',
           left: '50%',
           transform: 'translateX(-50%)',
           width: '2px'
         }}
       />
       
-      {/* Compacteur animé - positionné sur la route */}
+      {/* Engin parfaitement centré sur la route */}
       <div 
-        className={`fixed right-10 w-28 h-16 z-40 transition-transform duration-300 ease-out ${className}`}
+        className={`fixed w-28 h-16 z-40 transition-transform duration-300 ease-out ${className}`}
         style={{ 
           transform: `translateY(${translateY}vh)`,
           filter: 'drop-shadow(0 6px 16px rgba(0,0,0,0.8))',
           top: 0,
-          left: '50%',
-          marginLeft: '-14px' // Centrer le compacteur sur la route
+          right: '39px', // 50px - 11px (moitié de 28px - moitié de 10px) pour centrer parfaitement
+          left: 'auto',
+          marginLeft: '0'
         }}
       >
       <svg 
