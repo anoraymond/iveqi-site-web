@@ -8,6 +8,10 @@
   --brand-deep: #B71C1C;
   --neutral-light: #F5F5F5;
   --white: #FFFFFF;
+  
+  /* Couleurs pour la route droite */
+  --road-gray: #7A7A7A;
+  --road-dash: #FFFFFF;
 
   /* Variables système shadcn/ui */
   --radius: 0.625rem;
@@ -102,3 +106,23 @@ body {
     @apply bg-white text-gray-900;
   }
 }
+
+/* Styles pour la route droite */
+.iveqi-road {
+  background-color: var(--road-gray);
+  border: inset 1px rgba(0, 0, 0, 0.2);
+}
+
+.iveqi-road-dash {
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--road-dash) 0 14px,
+    transparent 14px 30px
+  );
+}
+
+.iveqi-road-cap {
+  background-color: var(--brand-yellow);
+}
+
+/* Animation basée sur le scroll - gérée par JavaScript */

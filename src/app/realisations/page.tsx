@@ -217,7 +217,6 @@ export default async function RealisationsPage() {
           variant="default"
         />
       </main>
-      <Footer />
       <WhatsAppButton />
     </>
   )

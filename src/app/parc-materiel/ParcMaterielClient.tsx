@@ -313,7 +313,7 @@ export function ParcMaterielClient({ equipment, filterGroups }: ParcMaterielClie
           </div>
         </section>
       </main>
-      <Footer />
+      
       <WhatsAppButton />
     </>
   )

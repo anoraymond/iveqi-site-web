@@ -6,7 +6,6 @@ import { ServiceGrid } from '@/components/ServiceCard'
 import { ProjectGrid } from '@/components/ProjectCard'
 import { TestimonialSlider } from '@/components/TestimonialCard'
 import { CTASection } from '@/components/CTA'
-import { ConstructionVehicle } from '@/components/ConstructionVehicle'
 import { getStatistics, getFeaturedServices, getFeaturedProjects, getFeaturedTestimonials } from '@/lib/content'
 
 export default async function Home() {
@@ -73,7 +72,6 @@ export default async function Home() {
         />
       </main>
       <WhatsAppButton />
-      <ConstructionVehicle />
     </>
   )
 }

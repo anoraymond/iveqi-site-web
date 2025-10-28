@@ -284,7 +284,7 @@ export default async function ContactPage() {
           </div>
         </section>
       </main>
-      <Footer />
+ 
       <WhatsAppButton />
     </>
   )

@@ -279,7 +279,6 @@ export default async function TemoignagesPage() {
           variant="inverted"
         />
       </main>
-      <Footer />
       <WhatsAppButton />
     </>
   )

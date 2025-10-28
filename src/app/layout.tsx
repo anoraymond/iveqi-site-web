@@ -6,6 +6,7 @@ import { defaultMetadata } from "@/lib/seo";
 import { JsonLd, organizationJsonLd, localBusinessJsonLd, serviceJsonLd } from "@/components/JsonLd";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import RightRoad from "@/components/RightRoad";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,10 +34,11 @@ export default function RootLayout({
           Aller au contenu principal
         </a>
         <Header />
-            <main id="main-content" className="pt-[72px] min-h-screen">
+        <main id="main-content" className="pt-[72px] min-h-screen relative">
           {children}
         </main>
         <Footer />
+        <RightRoad />
       </body>
     </html>
   );

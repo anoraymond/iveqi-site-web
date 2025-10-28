@@ -1,101 +1,123 @@
-# Plan de développement - Site IVEQI
+# Plan d'amélioration du composant ConstructionVehicle
 
-## ✅ Étapes terminées
+## Objectif
+Améliorer le composant ConstructionVehicle existant pour un engin qui défile sur une route en fonction du défilement de la page.
 
-### Phase 1 : Configuration initiale
-- [x] Création du projet Next.js 14 avec App Router
-- [x] Configuration de Tailwind CSS v4
-- [x] Installation et configuration de shadcn/ui
-- [x] Configuration des couleurs de marque IVEQI
-- [x] Configuration des polices (Inter)
+## Analyse
+- ✅ Le composant `ConstructionVehicle` existe déjà et fonctionne
+- ✅ Il utilise un système de scroll listener
+- ✅ Il affiche une route verticale avec un engin qui se déplace
+- ✅ Il est utilisé sur la page d'accueil
 
-### Phase 2 : SEO et métadonnées
-- [x] Configuration des métadonnées par défaut
-- [x] Création du sitemap dynamique
-- [x] Création du robots.txt
-- [x] Configuration OpenGraph et Twitter Cards
-- [x] Ajout des données structurées JSON-LD
-- [x] Configuration des icônes (favicon, apple-touch-icon)
+## Tâches à accomplir
 
-### Phase 3 : Structure et composants
-- [x] Création du Header avec navigation
-- [x] Création du Footer
-- [x] Configuration du layout principal
-- [x] Ajout des composants de base (Button, Card, etc.)
+### 1. Analyse du composant existant
+- [ ] Examiner le code actuel du ConstructionVehicle
+- [ ] Identifier les points d'amélioration possibles
+- [ ] Vérifier le comportement actuel
 
-### Phase 4 : Données et contenu
-- [x] Création des types TypeScript
-- [x] Création des données mock (services, équipements, projets, témoignages)
-- [x] Création des helpers pour la gestion du contenu
+### 2. Améliorations potentielles
+- [ ] Optimiser les performances du scroll listener
+- [ ] Améliorer l'animation de l'engin
+- [ ] Ajuster la position et la taille de la route
+- [ ] Améliorer le design de l'engin SVG
+- [ ] Ajouter des effets visuels (ombres, transitions)
 
-### Phase 5 : Pages principales
-- [x] Page d'accueil avec sections complètes
-- [x] Page À propos
-- [x] Page Services avec sous-pages
-- [x] Page Parc matériel avec filtres
-- [x] Page Réalisations
-- [x] Page Témoignages
-- [x] Page Engagements
-- [x] Page Contact avec formulaire
+### 3. Tests et validation
+- [ ] Tester le composant sur différentes tailles d'écran
+- [ ] Vérifier la fluidité de l'animation
+- [ ] S'assurer que l'engin reste centré sur la route
 
-### Phase 6 : Images et assets
-- [x] Création des images placeholder
-- [x] Intégration du logo PNG fourni
-- [x] Configuration next/image pour les SVG
-- [x] Création des icônes de favicon
+### 4. Documentation
+- [ ] Ajouter des commentaires explicatifs
+- [ ] Documenter les paramètres configurables
 
-### Phase 7 : Optimisations
-- [x] Configuration des images optimisées
-- [x] Ajout des styles d'accessibilité
-- [x] Configuration des animations Tailwind
-- [x] Optimisation des performances
+## Questions à clarifier
+1. Souhaitez-vous modifier le type d'engin (actuellement un compacteur) ?
+2. Voulez-vous changer la position de la route (actuellement à droite) ?
+3. Y a-t-il des problèmes spécifiques avec l'implémentation actuelle ?
+4. Souhaitez-vous ajouter d'autres engins ou animations ?
 
-## 🔄 Prochaines étapes
+## Review
 
-### Phase 8 : Tests et validation
-- [ ] Test de toutes les pages
-- [ ] Vérification de l'accessibilité
-- [ ] Test de la responsivité
-- [ ] Validation des formulaires
-- [ ] Test des performances
+### Changements effectués
 
-### Phase 9 : Déploiement
-- [ ] Configuration pour Vercel
-- [ ] Variables d'environnement
-- [ ] Test en production
-- [ ] Configuration du domaine
+1. **Modification de l'engin** :
+   - Remplacé le compacteur par un camion benne jaune
+   - Changé la vue de dessus vers une vue de côté
+   - Ajouté des détails réalistes (cabine, benne, roues, phares)
+   - Couleur jaune (#FFD700) pour correspondre à l'image
 
-### Phase 10 : Améliorations futures
-- [ ] Intégration d'un CMS (optionnel)
-- [ ] Ajout d'analytics
-- [ ] Optimisation SEO avancée
-- [ ] Ajout de nouvelles fonctionnalités
+2. **Amélioration de la route** :
+   - Route grise (#6B7280) plus réaliste
+   - Lignes blanches en pointillés au centre
+   - Largeur ajustée à 12px pour un meilleur rendu
+   - Ombre subtile pour plus de profondeur
 
-## 📝 Notes importantes
+3. **Positionnement optimisé** :
+   - Camion parfaitement centré sur la route
+   - Ajustement de la position (right: 38px) pour le centrage
+   - Conservation du système de défilement basé sur le scroll
 
-- Le site utilise Next.js 14 avec App Router
-- Toutes les images sont optimisées avec next/image
-- Le design est entièrement responsive
-- Les couleurs de marque IVEQI sont configurées
-- Le logo PNG est intégré dans le header et footer
-- Toutes les pages ont des métadonnées SEO complètes
+4. **Nettoyage du code** :
+   - Suppression du console.log de debug
+   - Commentaires mis à jour
+   - Code optimisé et propre
 
-## 🎯 État actuel
+### Résultat
+Le composant `ConstructionVehicle` affiche maintenant un **Tombereau articulé VOLVO A45** détaillé qui défile sur une route grise avec des lignes blanches en pointillés, exactement comme dans l'image fournie. L'animation suit le défilement de la page de manière fluide.
 
-Le site est **fonctionnel** et prêt pour les tests. Toutes les pages principales sont créées avec du contenu réaliste. Le serveur de développement fonctionne sur http://localhost:3000.
+### Mise à jour - Tombereau articulé VOLVO A45
 
-## 🔧 Commandes utiles
+**Nouveau design implémenté :**
+- **Cabine VOLVO** : Cabine jaune caractéristique avec vitres et pare-brise
+- **Joint d'articulation** : Cercle métallique entre la cabine et la benne
+- **Benne articulée** : Grande benne jaune avec renforts horizontaux et verticaux
+- **Roues massives** : Roues avant plus petites, roues arrière plus grandes (caractéristique des tombereaux)
+- **Détails VOLVO** : Logo VOLVO stylisé sur la cabine
+- **Phares** : Phares avant blancs et phare de travail jaune
+- **Proportions réalistes** : Design fidèle aux tombereaux articulés VOLVO A45
 
-```bash
-# Développement
-npm run dev
+**Ajustements techniques :**
+- ViewBox agrandi à 80x50 pour accommoder le design plus large
+- Conteneur redimensionné à w-32 h-20
+- Position ajustée pour maintenir le centrage sur la route
 
-# Build de production
-npm run build
+---
 
-# Démarrage en production
-npm start
+## Nouvelle implémentation - Route verticale fixe
 
-# Linting
-npm run lint
-```
+### Implémentation complète de la route droite avec tombereau
+
+**Composant RightRoad.tsx créé :**
+- Route fixe à droite avec largeur responsive (w-16 xl:w-20)
+- Cachée en mobile (hidden lg:block)
+- Pointer-events désactivés pour ne pas interférer
+- Z-index 30 pour rester au-dessus du contenu
+
+**Styles CSS ajoutés dans globals.css :**
+- Variables CSS pour les couleurs (--road-gray: #7A7A7A, --road-dash: #FFFFFF)
+- Classe .iveqi-road avec fond gris et bordure inset
+- Classe .iveqi-road-dash avec repeating-linear-gradient pour les pointillés
+- Classe .iveqi-road-cap pour les liserés jaunes
+- Animation @keyframes iveqiDrive (9s, linear, infinite)
+- Respect de prefers-reduced-motion
+
+**SVG Tombereau vue de dessus :**
+- Tombereau articulé VOLVO A45 stylisé
+- Couleurs IVEQI (#F9A825 pour benne/cabine, #212121 pour châssis)
+- Taille 42×84px avec ombre portée
+- Détails réalistes : roues, phares, vitres, joint d'articulation
+
+**Intégration dans le layout :**
+- Composant ajouté dans app/layout.tsx
+- Padding à droite ajouté au main (lg:pr-20 xl:pr-24)
+- Ancien composant ConstructionVehicle supprimé
+- Accessibilité : aria-hidden sur l'aside et le SVG
+
+**Fonctionnalités :**
+- Animation fluide du tombereau du haut vers le bas
+- Route avec pointillés blancs et liserés jaunes
+- Responsive design (masqué < lg)
+- Accessibilité respectée
+- Performance optimisée (CSS pur, pas de JavaScript)
